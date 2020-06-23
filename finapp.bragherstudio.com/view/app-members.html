@@ -157,10 +157,10 @@
 </head>
 <body>
     <!-- loader -->
-    <!-- <div id="loader">
+    <div id="loader">
       <h4 style="color: #fff; "> Welcome To Our LeaderBoard</h4> 
-        <img src="assets/img/logo-icon.png" alt="icon" class="loading-icon">
-    </div> -->
+        <!-- <img src="assets/img/logo-icon.png" alt="icon" class="loading-icon"> -->
+    </div>
     <!-- * loader -->
     <!-- App Header -->
     <div class="appHeader bg-primary text-light">
@@ -173,98 +173,61 @@
     </div>
 
     <div id="appCapsule">
-   <!-- Wallet Card -->
-        <div class="section wallet-card-section pt-1">
-            <div class="wallet-card">
-                <!-- Wallet Footer -->
-                <div class="wallet-footer">
-                    <div class="item">
-                        <a href="app-index.html#" data-toggle="modal" data-target="#withdrawActionSheet">
-                            <div class="icon-wrapper bg-danger">
-                                <!-- <ion-icon name="arrow-down-outline"></ion-icon> -->
-                                    <ion-icon name="add-outline"></ion-icon>
+
+
+
+    <div class="section mt-2">
+            <div class="section-title">List of Members</div>
+               <form>
+                        <div class="form-group boxed">
+                            <div class="input-wrapper">
+                                <label class="label" for="text4b">Search Member </label>
+                                <input type="text" class="form-control" id="text4b" placeholder="Search Member">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
                             </div>
-                            <strong>Import Team Member Records</strong>
-                        </a>
-                    </div>
-                </div>
-                <!-- * Wallet Footer -->
-            </div>
-        </div>
-        <div class="modal fade action-sheet" id="withdrawActionSheet" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Import CSV File </h5>
-                    </div>
-                    <div class="modal-body">
-                        <div class="action-sheet-content">
-                            <form action="app-upload.html">
-                                <div class="form-group basic">
-                                    <label class="label">Import CSv File</label>
-                                    <div class="input-group mb-2">
-                                        
-                                        <input type="file" class="form-control " placeholder="0">
-                                    </div>
-                                </div>
-
-                                <div class="form-group basic">
-                                    <button type="button" class="btn btn-primary btn-block btn-lg"
-                                        data-dismiss="modal">  Upload File </button>
-                                </div>
-                            </form>
                         </div>
-                    </div>
+
+                    </form>
+            <div class="card">
+                <div class="table-responsive">
+
+
+                 
+                    <table class="table rounded">
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Point</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">15323</th>
+                                <td>John</td>
+                                <td class="text-right text-primary">26</td>
+                            </tr>
+                         
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <!-- First three with hightest score start -->
-        <div class="section mt-4" style="margin-bottom: 24px !important;">
-            <div class="section-heading">
-                <h2 class="title">Top Three With Hightest Score </h2>
-             
-            </div>
-            <div class="transactions">
 
-                <!-- item -->
-                <a class="item">
-                    <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
-                        <ion-icon name="person-outline" class= "image-block imaged w48"></ion-icon>
-                        <div>
-                            <strong>Bosun</strong>
-                            <p>100points</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- * item -->
-                  <!-- item -->
-                <a  class="item">
-                    <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
-                        <ion-icon name="person-outline" class= "image-block imaged w48"></ion-icon>
-                        <div>
-                            <strong>Bosun</strong>
-                            <p>100points</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- * item -->
-            </div>
-        </div>
-       <!-- First three with hightest score  -->
     </div>
     <!-- * App Capsule -->
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="app-index.html" class="item active">
+        <a href="app-index.html" class="item ">
             <div class="col">
                 <ion-icon
                  name="pie-chart-outline"></ion-icon>
                 <strong>Dashboard</strong>
             </div>
         </a>
-         <a href="app-members.html" class="item">
+         <a href="app-index.html" class="item active">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
                 <strong>Members</strong>

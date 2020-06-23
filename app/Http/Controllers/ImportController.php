@@ -73,9 +73,10 @@ class ImportController extends Controller
     public function getvalue(){
         $value = '1000';
 
-        $search = DB::table('contacts')->orderBy('score', 'ASC')->get();
+        $search = DB::table('contacts')->orderBy('score', 'DESC')->get();
+        $top = DB::table('contacts')->orderBy('score', 'DESC')->take(3)->get();
 
-        return view('welcome', compact('search'));
+        return view('welcome', compact('search','top'));
     }
     // SELECT * FROM `student` WHERE class='Six' ORDER BY mark DESC LIMIT 0,3
 }

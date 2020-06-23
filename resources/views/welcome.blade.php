@@ -32,6 +32,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/logo.jpg" sizes="32x32">
     <link rel="shortcut icon" href="/img/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         .first-div{
             color: #fff;
@@ -186,22 +187,61 @@
         </div>
        
     </div>
-
+    <br><br>
     <div id="appCapsule">
+        <div class="container">
+    
+
+            <div class="row">
+                @foreach ( $top as $try )
+                    
+                @if($try->score === "54")
+                <div class="col-4 mb-2">
+                    <div class="bill-box" style="background:#34c3e3b3!important;">
+                       
+                        <h3>{{ $try->username}}</h3>
+                        <h1>{{ $try->score}}</h1>
+                        <a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$try->score}}"  target="_blank" style="font-size:16px"> Share <i class="fa fa-twitter"></i></a>
+
+                    </div>
+                   
+                </div>
+                @endif
+
+                @if($try->score === "52")
+                <div class="col-4 mb-2">
+                    <div class="bill-box" style="background:#9028d7b3!important;">
+                       
+                        <h3>{{ $try->username}}</h3>
+                        <h1>{{ $try->score}}</h1>
+                        <a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$try->score}}"  target="_blank" style="font-size:16px"> Share <i class="fa fa-twitter"></i></a>
+
+                    </div>
+                   
+                </div>
+                @endif
+
+                @if($try->score === "51")
+                <div class="col-4 mb-2">
+                    <div class="bill-box" style="background:#131213b3 !important;">
+                       
+                        <h3>{{ $try->username}}</h3>
+                        <h1>{{ $try->score}}</h1>
+                        <a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$try->score}}"  target="_blank" style="font-size:16px"> Share <i class="fa fa-twitter"></i></a>
+
+                    </div>
+                   
+                </div>
+                @endif
+
+                @endforeach
+            </div>
+        </div>
+    </div>
+        
         <div class="section mt-2">
             <div class="section-title">List of Members</div>
-               <form>
-                        {{-- <div class="form-group boxed">
-                            <div class="input-wrapper">
-                                <label class="label" for="text4b">Search Member </label>
-                                <input type="text" class="form-control" id="text4b" placeholder="Search Member">
-                                <i class="clear-input">
-                                    <ion-icon name="close-circle"></ion-icon>
-                                </i>
-                            </div>
-                        </div>
-
-                    </form> --}}
+            
             <div class="card">
                 <div class="table-responsive">
 
@@ -212,6 +252,7 @@
                             <tr>
                                 <th scope="col">Username</th>
                                 <th scope="col">Point</th>
+                                <th scope="col">Share</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -222,6 +263,8 @@
                             <tr>
                                 <td> {{ $hey->username}}</td>
                                 <td> {{ $hey->score}}</td>
+                                <td><a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$hey->score}}"  target="_blank"> Share <i class="fa fa-twitter"></i></a>
+                                </td>
                             </tr>
                             @endforeach
 

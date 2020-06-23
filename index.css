@@ -9,6 +9,11 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+img{
+    padding: 0px 10px;
+    width: 10%;
+    height:10%;
+}
 .first-div{
     width: 40%;
     height: 10%;
@@ -22,6 +27,7 @@ body {
     box-shadow: 2px 3px rgba(128, 128, 128, 0.671);
 }
 .second-div{
+    font-weight: 20px;
     width: 30%;
     height: 10%;
     margin: 20px 0;
@@ -30,6 +36,7 @@ body {
     box-shadow: 2px 3px rgba(128, 128, 128, 0.671);
 }
 .second-div ul{
+    font-weight: 20px;
     list-style: none;
     display: flex;
     justify-content: space-between;

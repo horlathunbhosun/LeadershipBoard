@@ -29,9 +29,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
    
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
-    <link rel="shortcut icon" href="/img/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/logo.jpg" sizes="32x32">
+        <link rel="shortcut icon" href="/img/logo.jpg">
     <style type="text/css">
         .first-div{
             color: #fff;

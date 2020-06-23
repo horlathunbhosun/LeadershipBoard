@@ -292,21 +292,21 @@
     </div>
     <!-- * App Capsule -->
     <!-- App Bottom Menu -->
-    {{-- <div class="appBottomMenu">
-        <a href="app-index.html" class="item active">
+     <div class="appBottomMenu">
+        <a href="{{ route('import')}}" class="item active">
             <div class="col">
                 <ion-icon
                  name="pie-chart-outline"></ion-icon>
                 <strong>Dashboard</strong>
             </div>
         </a>
-         <a href="app-members.html" class="item">
+         <a href="{{ route('leads')}}" class="item">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
-                <strong>Members</strong>
+                <strong>Board</strong>
             </div>
         </a>
-    </div> --}}
+    </div> 
     <!-- * App Bottom Menu -->
     <!-- ///////////// Js Files ////////////////////  -->
     <!-- Jquery -->

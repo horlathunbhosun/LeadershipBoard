@@ -300,7 +300,7 @@
                 <strong>Dashboard</strong>
             </div>
         </a>
-         <a href="{{ route('leads')}}" class="item">
+         <a href="{{ route('lead')}}" class="item">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
                 <strong>Board</strong>

@@ -297,13 +297,13 @@
             <div class="col">
                 <ion-icon
                  name="pie-chart-outline"></ion-icon>
-                <strong>Dashboard</strong>
+                <strong>Import</strong>
             </div>
         </a>
          <a href="{{ route('lead')}}" class="item">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
-                <strong>Board</strong>
+                <strong>Members</strong>
             </div>
         </a>
     </div> 

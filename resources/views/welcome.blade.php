@@ -246,7 +246,7 @@
          <a href="{{ route('lead')}}" class="item active">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
-                <strong>Leads</strong>
+                <strong>Members</strong>
             </div>
         </a>
     </div>

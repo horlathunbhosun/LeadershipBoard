@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\CsvData;
-use App\Http\Requests\CsvImportRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Http\Requests\CsvImportRequest;
 
 class ImportController extends Controller
 {
@@ -68,4 +69,13 @@ class ImportController extends Controller
         return view('import_success');
     }
 
+
+    public function getvalue(){
+        $value = '1000';
+
+        $search = DB::table('contacts')->orderBy('score', 'ASC')->get();
+
+        return view('welcome', compact('search'));
+    }
+    // SELECT * FROM `student` WHERE class='Six' ORDER BY mark DESC LIMIT 0,3
 }

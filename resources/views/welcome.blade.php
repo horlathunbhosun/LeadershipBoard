@@ -235,17 +235,18 @@
     <!-- * App Capsule -->
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="app-index.html" class="item ">
+        <a href="{{ route('import')}}" class="item ">
             <div class="col">
                 <ion-icon
                  name="pie-chart-outline"></ion-icon>
-                <strong>Dashboard</strong>
+                <strong>Import</strong>
             </div>
         </a>
-         <a href="app-index.html" class="item active">
+        
+         <a href="{{ route('lead')}}" class="item active">
             <div class="col">
                 <ion-icon name="people-outline"></ion-icon>
-                <strong>Members</strong>
+                <strong>Leads</strong>
             </div>
         </a>
     </div>

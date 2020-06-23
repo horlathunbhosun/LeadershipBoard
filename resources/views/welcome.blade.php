@@ -188,14 +188,15 @@
        
     </div>
     <br><br>
+
+   <marquee behavior="" direction=""> <h2> Team: @Reehah , @Femithz, @017n, @TomiRachel</h1></marquee>
     <div id="appCapsule">
         <div class="container">
     
 
             <div class="row">
                 @foreach ( $top as $try )
-                    
-                @if($try->score === "54")
+              
                 <div class="col-4 mb-2">
                     <div class="bill-box" style="background:#34c3e3b3!important;">
                        
@@ -206,33 +207,7 @@
                     </div>
                    
                 </div>
-                @endif
-
-                @if($try->score === "52")
-                <div class="col-4 mb-2">
-                    <div class="bill-box" style="background:#9028d7b3!important;">
-                       
-                        <h3>{{ $try->username}}</h3>
-                        <h1>{{ $try->score}}</h1>
-                        <a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$try->score}}"  target="_blank" style="font-size:16px"> Share <i class="fa fa-twitter"></i></a>
-
-                    </div>
-                   
-                </div>
-                @endif
-
-                @if($try->score === "51")
-                <div class="col-4 mb-2">
-                    <div class="bill-box" style="background:#131213b3 !important;">
-                       
-                        <h3>{{ $try->username}}</h3>
-                        <h1>{{ $try->score}}</h1>
-                        <a href="https://twitter.com/intent/tweet?text=My%20Point%20on%20HNG%20Leader%20board%20is {{$try->score}}"  target="_blank" style="font-size:16px"> Share <i class="fa fa-twitter"></i></a>
-
-                    </div>
-                   
-                </div>
-                @endif
+               
 
                 @endforeach
             </div>

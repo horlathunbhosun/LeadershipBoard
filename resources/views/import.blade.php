@@ -287,7 +287,46 @@
             </div>
         </div>
         <!-- First three with hightest score start -->
+<<<<<<< HEAD:finapp.bragherstudio.com/view/app-index.html
+         <div class="row">
+                    <div class="col-6 mb-2">
+                        <div class="bill-box">
+                            <div class="img-wrapper">
+                                <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                            </div>
+                            <div class="price">20 Points</div>
+                            <p>Bosun Olulode</p>
+                            <a href="app-bills.html#" class="btn btn-primary btn-block btn-sm">share</a>
+                        </div>
+                    </div>
+                       <div class="col-6 mb-2">
+                        <div class="bill-box">
+                            <div class="img-wrapper">
+                                <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                            </div>
+                            <div class="price">20 Points</div>
+                            <p>Bosun Olulode</p>
+                            <a href="app-bills.html#" class="btn btn-primary btn-block btn-sm">share</a>
+                        </div>
+                    </div>
+                        <div class="col-6 mb-2">
+                        <div class="bill-box">
+                            <div class="img-wrapper">
+                                <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                            </div>
+                            <div class="price">20 Points</div>
+                            <p>Bosun Olulode</p>
+                            <a href="app-bills.html#" class="btn btn-primary btn-block btn-sm">share</a>
+                        </div>
+                    </div>
+                      <div class="col-6 mb-2 text-center" style="top: 5rem">
+                           <a href="app-members.html" class="link">View All</a>
+                    </div>
+                </div>
+            </div>
+=======
    
+>>>>>>> 3ad3fc8ba2306e9c76c66b0181f399822c5ac71a:resources/views/import.blade.php
        <!-- First three with hightest score  -->
     </div>
     <!-- * App Capsule -->
